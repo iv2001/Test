@@ -1,0 +1,11 @@
+_schema-version: "3.1"
+ID: "Z_LUNCH_FACTORY"
+version: 0.0.1
+modules:
+  - name: lunch-module
+    type: nodejs
+    path: .
+    requires:
+      - name: lunch-service
+        properties:
+          key: value
