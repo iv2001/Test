@@ -34,6 +34,6 @@ steps:
   artifactPrepareVersion:
     versioningType: "cloud_noTag"
   mtaBuild:
-    applicationName: "MyApplication"
+    applicationName: "Z_LUNCH_FACTORY"
     buildTarget: "CF"
     platform: "CF"
