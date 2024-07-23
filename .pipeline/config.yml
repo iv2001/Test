@@ -1,6 +1,7 @@
 ---
 general:
   buildTool: "mta"
+  verbose: true
 service:
   buildToolVersion: "MBTJ21N20"
   stages:
@@ -19,7 +20,7 @@ stages:
     tmsExport: false
     tmsUpload: false
     cfApiEndpoint: "https://api.cf.eu10-004.hana.ondemand.com"
-    cfOrg: " abat AG_abat-intern-spielwiese-cf-fsb"
+    cfOrg: "abat AG_abat-intern-spielwiese-cf-fsb"
     cfSpace: "dev"
     deployType: "standard"
     cloudFoundryDeploy: true
@@ -32,3 +33,7 @@ steps:
     mtaDeployParameters: "-f --version-rule ALL"
   artifactPrepareVersion:
     versioningType: "cloud_noTag"
+  mtaBuild:
+    applicationName: "MyApplication"
+    buildTarget: "CF"
+    platform: "CF"
